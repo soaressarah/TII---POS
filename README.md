@@ -1,6 +1,5 @@
 # TII---POS
 ## COMPONENTES
-- - - 
   - Laís Pereira do Nascimento
     - Matrícula: 20141011110107  
     - Github Nickname: laypereirar
@@ -11,11 +10,9 @@
     - Matrícula: 20141011110034
     - Github Nickname: santosvanessa
 ## LINGUAGEM
-- - - 
   - Chakra
 
 ## RESUMO
-- - - 
 1. Propósito da linguagem
     - propósitos aqui
 2. Paradigma da Linguagem
