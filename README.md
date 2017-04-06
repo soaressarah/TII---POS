@@ -14,10 +14,18 @@
 
 ## RESUMO
 1. Propósito da linguagem
-    - propósitos aqui
+    - Chakra é um código aberto em JavaScript que foi desenvolvido pela Microsoft para a versão do Internet Explorer 9 (32-bit)
 2. Paradigma da Linguagem
     - Multi-paradigma
 3. Data de criação
-    - data aqui
+    - 2009
 4. Principal mantedor
     - Microsoft
+## Instalação e Uso
+* Instalação
+    * O ChakraCore é suportado em Windows 7 ou posterior e Windows Server 2008 R2 ou posterior, com ou [Visual Studio 2013](https://www.microsoft.com/pt-br/download/details.aspx?id=48129) ou [2015](https://www.microsoft.com/en-us/download/details.aspx?id=48146) com suporte de C++ instalados. Após a instalação do Visual Studio:
+    1. Clone o ChakraCore através do [link](https://github.com/Microsoft/ChakraCore.git)
+    2. Abra Build\Chakra.Core.sln no visual studio
+    3. Execute a solução
+* Uso
+
