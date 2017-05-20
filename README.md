@@ -110,11 +110,11 @@
    - <b>(-)</b> : number -> number -> number <br><br>
    - <b>(*)</b> : number -> number -> number <br><br>
    - <b>(/)</b> : Float -> Float -> Float <br>
-       Floating point division.<br>
+       Floating point division.<br><br>
    - <b>(^)</b> : number -> number -> number <br>
-       Exponentiation  3^2 == 9<br>
+       Exponentiation  3^2 == 9<br><br>
    - <b>(//)</b> : Int -> Int -> Int <br>
-       Divisão Inteira. O restante é descartado.<br>
+       Divisão Inteira. O restante é descartado.<br><br>
    - <b>rem</b> : Int -> Int -> Int <br>
        Encontra o restante depois de dividir um número por outro.<br>
         *->	rem 11 4 == 3*<br>
