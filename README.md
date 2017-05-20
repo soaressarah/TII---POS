@@ -145,5 +145,21 @@
         *-> logBase 2 256 == 8* <br><br>
    - <b>e</b> : Float <br>
       Uma aproximação de e.<br><br>
-3. Estruturas de controle condicional
--- Declarações if sempre devem ter um else e os valores devem ser do mesmo tipo.
+3. Estruturas de controle condicional <br>
+Declarações if sempre devem ter um else e os valores devem ser do mesmo tipo. <br>
+<pre>
+if powerLevel > 9000 then
+  "WHOA!"
+else
+  "meh"
+</pre>
+<br>Declarações if podem ser encadeadas.<br>
+<pre>
+if n == 0 then
+  "n é zero"
+else if n > 0 then
+  "n é positivo"
+else
+  "n é negativo"
+</pre>
+4. Funções
