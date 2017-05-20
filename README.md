@@ -89,8 +89,8 @@
         }
         </pre>
 ## SINTAXE BÁSICA
-* Operadores relacionais e lógicos
-  * •	not : Bool -> Bool
-        Nega um valor boleano.
-          not True == False
-          not False == True
+1. Operadores relacionais e lógicos
+   - <h5>not</h5> : Bool -> Bool
+        * Nega um valor boleano.
+        *  not True == False
+        *  not False == True
