@@ -91,6 +91,7 @@
 ## SINTAXE BÁSICA
 1. Operadores relacionais e lógicos
    - <b>not</b> : Bool -> Bool <br>
-         Nega um valor boleano.
+         Nega um valor boleano. 
+         <br>
           *not True == False*
           *not False == True*
