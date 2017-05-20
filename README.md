@@ -106,3 +106,12 @@
    - <b>xor</b> Bool -> Bool -> Bool <br>
         O operador exlusivo.True se exatamente uma entrada for True.<br><br>
 2. Operadores aritiméticos
+   - <b>(+)</b> : number -> number -> number <br>
+   - <b>(-)</b> : number -> number -> number <br>
+   - <b>(*)</b> : number -> number -> number <br>
+   - <b>(/)</b> : Float -> Float -> Float <br>
+        Floating point division.
+   - <b>(^)</b> : number -> number -> number <br>
+        Exponentiation  3^2 == 9
+   - <b>(//)</b> : Int -> Int -> Int <br>
+        Divisão Inteira. O restante é descartado.
