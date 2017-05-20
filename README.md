@@ -146,14 +146,14 @@
    - <b>e</b> : Float <br>
       Uma aproximação de e.<br><br>
 3. Estruturas de controle condicional <br>
-Declarações if sempre devem ter um else e os valores devem ser do mesmo tipo. <br>
+Declarações if sempre devem ter um else e os valores devem ser do mesmo tipo.
 <pre>
 if powerLevel > 9000 then
   "WHOA!"
 else
   "meh"
 </pre>
-<br>Declarações if podem ser encadeadas.<br>
+Declarações if podem ser encadeadas.
 <pre>
 if n == 0 then
   "n é zero"
