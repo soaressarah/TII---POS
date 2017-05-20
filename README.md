@@ -92,12 +92,17 @@
 1. Operadores relacionais e lógicos
    - <b>not</b> : Bool -> Bool <br>
          Nega um valor boleano. 
-         <br>
+         <br><br>
             *not True == False* <br>
             *not False == True*
-   - <b>(&&)</b> :Bool -> Bool -> Bool <br>
+   - <b>(&&)</b> : Bool -> Bool -> Bool <br>
          O operador logico AND. True se ambas entradas forem True.
-         <br>
+         <br><br>
         *Note: Quando usado na posição do infixo, como (esquerda && direita), o operador curto-circuita. Isso significa que, se deixado é False, não nos incomodamos em avaliar direito e retornar apenas False global.*
-
+   - <b>(||)</b> : Bool -> Bool -> Bool <br>
+         O operador logico OR. True se uma ou ambas as entradas forem True.
+         <br><br>
+        *Note: Quando usado na posição do infixo, como (esquerda && direita), o operador curto-circuita. Isso significa que, se deixado é True, não nos incomodamos em avaliar direito e retornar apenas True global.*
+   - <b>xor</b> Bool -> Bool -> Bool <br>
+        O operador exlusivo.True se exatamente uma entrada for True.
 2. Operadores aritiméticos
