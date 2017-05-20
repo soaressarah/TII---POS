@@ -110,8 +110,39 @@
    - <b>(-)</b> : number -> number -> number <br>
    - <b>(*)</b> : number -> number -> number <br>
    - <b>(/)</b> : Float -> Float -> Float <br>
-        Floating point division.
+       Floating point division.
    - <b>(^)</b> : number -> number -> number <br>
-        Exponentiation  3^2 == 9
+       Exponentiation  3^2 == 9
    - <b>(//)</b> : Int -> Int -> Int <br>
-        Divisão Inteira. O restante é descartado.
+       Divisão Inteira. O restante é descartado.
+   - <b>rem</b> : Int -> Int -> Int
+       Encontra o restante depois de dividir um número por outro.<br>
+        *->	rem 11 4 == 3*<br>
+        *-> rem 12 4 == 0*<br>
+        *-> rem 13 4 == 1*<br>
+        *-> rem -1 4 == -1*<br>
+   - <b>(%)</b> : Int -> Int -> Int
+       Executar aritmética modular<br>
+        *-> 7 % 2 == 1<br>
+        *-> -1 % 4 == 3<br>
+   - <b>negate</b> : number -> number
+       Um número negativo.<br>
+        *-> negate 42 == -42*<br>
+        *-> negate -42 == 42*<br>
+        *-> negate 0 == 0*<br>
+   - <b>abs</b> : number -> number
+       Pegue o valor absoluto de um número. <br>
+   - <b>sqrt</b> : Float -> Float
+      Pegue a raiz quadrada de um número. <br>
+   - <b>clamp</b> : number -> number -> number -> number
+      Prende um número dentro de um determinado intervalo. Com a expresao [clamp 100 200 x] os resultados são os seguites: <br>
+        *-> 100     if x < 100* <br>
+        *-> x      if 100 <= x < 200* <br>
+        *-> 200     if 200 <= x* <br>
+   - <b>logBase</b> : Float -> Float -> Float
+      Calcula o logaritmo de um numero com um dada base.
+        *-> logBase 10 100 == 2*
+        *-> logBase 2 256 == 8*
+   - <b>e</b> : Float
+      Uma aproximação de e.
+
