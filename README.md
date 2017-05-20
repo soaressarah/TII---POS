@@ -95,3 +95,9 @@
          <br>
             *not True == False* <br>
             *not False == True*
+   - <b>(&&)</b> :Bool -> Bool -> Bool <br>
+         O operador logico AND. True se ambas entradas forem True.
+         <br>
+        *Note: Quando usado na posição do infixo, como (esquerda && direita), o operador curto-circuita. Isso significa que, se deixado é False, não nos incomodamos em avaliar direito e retornar apenas False global.*
+
+2. Operadores aritiméticos
