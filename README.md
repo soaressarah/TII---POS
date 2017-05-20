@@ -94,15 +94,15 @@
          Nega um valor boleano. 
          <br><br>
             *not True == False* <br>
-            *not False == True*
+            *not False == True* <br>
    - <b>(&&)</b> : Bool -> Bool -> Bool <br>
          O operador logico AND. True se ambas entradas forem True.
          <br><br>
-        *Note: Quando usado na posição do infixo, como (esquerda && direita), o operador curto-circuita. Isso significa que, se deixado é False, não nos incomodamos em avaliar direito e retornar apenas False global.*
+        *Note: Quando usado na posição do infixo, como (esquerda && direita), o operador curto-circuita. Isso significa que, se deixado é False, não nos incomodamos em avaliar direito e retornar apenas False global.*<br>
    - <b>(||)</b> : Bool -> Bool -> Bool <br>
          O operador logico OR. True se uma ou ambas as entradas forem True.
          <br><br>
-        *Note: Quando usado na posição do infixo, como (esquerda && direita), o operador curto-circuita. Isso significa que, se deixado é True, não nos incomodamos em avaliar direito e retornar apenas True global.*
+        *Note: Quando usado na posição do infixo, como (esquerda && direita), o operador curto-circuita. Isso significa que, se deixado é True, não nos incomodamos em avaliar direito e retornar apenas True global.*<br>
    - <b>xor</b> Bool -> Bool -> Bool <br>
-        O operador exlusivo.True se exatamente uma entrada for True.
+        O operador exlusivo.True se exatamente uma entrada for True.<br>
 2. Operadores aritiméticos
