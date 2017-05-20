@@ -88,3 +88,9 @@
         }
         }
         </pre>
+## SINTAXE BÁSICA
+* Operadores relacionais e lógicos
+  * •	not : Bool -> Bool
+        Nega um valor boleano.
+          not True == False
+          not False == True
