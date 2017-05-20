@@ -145,4 +145,5 @@
         *-> logBase 2 256 == 8* <br><br>
    - <b>e</b> : Float <br>
       Uma aproximação de e.<br><br>
-
+3. Estruturas de controle condicional
+-- Declarações if sempre devem ter um else e os valores devem ser do mesmo tipo.
