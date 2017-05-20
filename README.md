@@ -93,5 +93,5 @@
    - <b>not</b> : Bool -> Bool <br>
          Nega um valor boleano. 
          <br>
-          *not True == False*
-          *not False == True*
+            *not True == False* <br>
+            *not False == True*
