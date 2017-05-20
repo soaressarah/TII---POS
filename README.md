@@ -106,21 +106,21 @@
    - <b>xor</b> Bool -> Bool -> Bool <br>
         O operador exlusivo.True se exatamente uma entrada for True.<br><br>
 2. Operadores aritiméticos
-   - <b>(+)</b> : number -> number -> number <br>
-   - <b>(-)</b> : number -> number -> number <br>
-   - <b>(*)</b> : number -> number -> number <br>
+   - <b>(+)</b> : number -> number -> number <br><br>
+   - <b>(-)</b> : number -> number -> number <br><br>
+   - <b>(*)</b> : number -> number -> number <br><br>
    - <b>(/)</b> : Float -> Float -> Float <br>
-       Floating point division.
+       Floating point division.<br>
    - <b>(^)</b> : number -> number -> number <br>
-       Exponentiation  3^2 == 9
+       Exponentiation  3^2 == 9<br>
    - <b>(//)</b> : Int -> Int -> Int <br>
-       Divisão Inteira. O restante é descartado.
+       Divisão Inteira. O restante é descartado.<br>
    - <b>rem</b> : Int -> Int -> Int <br>
        Encontra o restante depois de dividir um número por outro.<br>
         *->	rem 11 4 == 3*<br>
         *-> rem 12 4 == 0*<br>
         *-> rem 13 4 == 1*<br>
-        *-> rem -1 4 == -1*<br>
+        *-> rem -1 4 == -1*<br><br>
    - <b>(%)</b> : Int -> Int -> Int <br>
        Executar aritmética modular <br>
         *-> 7 % 2 == 1<br>
