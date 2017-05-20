@@ -153,7 +153,7 @@ if powerLevel > 9000 then
 else
   "meh"
 </pre>
-Declarações if podem ser encadeadas.
+  Declarações if podem ser encadeadas.
 <pre>
 if n == 0 then
   "n é zero"
