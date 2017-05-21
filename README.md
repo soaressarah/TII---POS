@@ -41,7 +41,7 @@ $ elm-repl<br>
 > 1 / 2 <br>
 0.5 : Float <br>
 > List.length [1,2,3,4] <br>
-4 : Int <br>
+4 : Int 
 > String.reverse "stressed" <br>
 "desserts" : String <br>
 > :exit <br>
