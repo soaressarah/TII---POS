@@ -90,7 +90,8 @@
         </pre>
 ## SINTAXE BÁSICA
 1. Variaveis e constantes
-  
+variavel = valor
+*Mesma estrutura para todos os tipos*
 2. Operadores relacionais e lógicos
    - <b>not</b> : Bool -> Bool <br>
          Nega um valor boleano. 
