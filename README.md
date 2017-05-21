@@ -26,6 +26,7 @@
     - O Elm pode ser instalado no Mac, Windows, Linux (através do npm), a plataforma também disponibiliza um compilador online. Se você for baixar no Mac ou Windows basta fazer o download em: http://elm-lang.org/
     - Para instalar no Linux basta utilizar este comando: 
       *$ npm install -g elm*
+* Uso
     - Após a instalação, você terá as seguintes ferramentas de linha de comando: <br>
       <b>elm-repl</b> - brincar com expressões Elm <br>
       <b>elm-reactor</b> - obter um projeto rapidamente <br>
