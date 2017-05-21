@@ -83,7 +83,7 @@ VS Code
 </pre>
 
 ## Sintaxe Básica
-1. <i>Variaveis e constantes</i>
+1. Variaveis e constantes
 variavel = valor
 *Mesma estrutura para todos os tipos*
 2. Operadores relacionais e lógicos
