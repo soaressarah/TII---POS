@@ -89,7 +89,9 @@
         }
         </pre>
 ## SINTAXE BÁSICA
-1. Operadores relacionais e lógicos
+1. Variaveis e constantes
+  
+2. Operadores relacionais e lógicos
    - <b>not</b> : Bool -> Bool <br>
          Nega um valor boleano. 
          <br><br>
@@ -105,7 +107,7 @@
         *Note: Quando usado na posição do infixo, como (esquerda && direita), o operador curto-circuita. Isso significa que, se deixado é True, não nos incomodamos em avaliar direito e retornar apenas True global.*<br><br>
    - <b>xor</b> Bool -> Bool -> Bool <br>
         O operador exlusivo.True se exatamente uma entrada for True.<br><br>
-2. Operadores aritiméticos
+3. Operadores aritiméticos
    - <b>(+)</b> : number -> number -> number <br><br>
    - <b>(-)</b> : number -> number -> number <br><br>
    - <b>(*)</b> : number -> number -> number <br><br>
@@ -145,7 +147,7 @@
         *-> logBase 2 256 == 8* <br><br>
    - <b>e</b> : Float <br>
       Uma aproximação de e.<br><br>
-3. Estruturas de controle condicional <br>
+4. Estruturas de controle condicional <br>
 Declarações if sempre devem ter um else e os valores devem ser do mesmo tipo.
 <pre>
 if powerLevel > 9000 then
@@ -162,7 +164,22 @@ else if n > 0 then
 else
   "n é negativo"
 </pre>
-4. Funções
+5. Estruturas de repetiçao
+<pre>
+sum : List number -> number
+sum lst =
+  case lst of
+    [] ->   0
+    (x::xs) -> x + sum(xs)
+----------------------------
+sum [1,4, 6, 8] -- 19
+</pre>
+6. Vetor, Matriz e String
+   - Strings <br>
+      *"Esta é uma string porque ela utiliza aspas duplas."*<br>
+      Strings podem ser anexadas.<br>
+      *"Olá " ++ "mundo!" -- "Olá mundo!"*<br>
+7. Funções
 <pre>
 multiply a b =
   a * b
@@ -204,3 +221,4 @@ Funções podem ser recursivas.
     1 <br>
   else <br>
     fib (n - 1) + fib (n - 2)* <br>
+
