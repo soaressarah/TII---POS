@@ -163,3 +163,46 @@ else
   "n é negativo"
 </pre>
 4. Funções
+<pre>
+multiply a b =
+  a * b
+</pre>
+Aplica (chama) uma função passando seus argumentos (vírgulas não necessárias).
+<pre>
+multiply 7 6
+</pre>
+Aplica parcialmente uma função passando somente alguns de seus argumentos.
+<br>Dando, em seguida, um novo nome a função.
+<pre>
+double =
+  multiply 2
+</pre>
+Passa funções como argumentos para outras funções.
+<pre>List.map double [1..4] -- [2, 4, 6, 8]</pre>
+Ou escreva uma função anônima.
+<pre>List.map (\a -> a * 2) [1..4] -- [2, 4, 6, 8]</pre>
+Esta função recebe uma tupla em vez de dois argumentos. <br>
+Esta é a maneira que você normalmente vai desempacotar/extrair valores de tuplas.
+<pre>
+area (width, height) =
+  width * height
+</pre>
+Utilize chaves para casar o padrão de nomes de campos de um registro. <br>
+Utilize let para definir valores intermediários.
+<pre>
+volume {width, height, depth} =
+  let
+    area = width * height
+  in
+    area * depth
+--------------------------------------------
+volume { width = 3, height = 2, depth = 7 } 
+</pre>
+Funções podem ser recursivas.
+<pre>
+fib n =
+  if n !<! 2 then
+    1
+  else
+    fib (n - 1) + fib (n - 2)
+</pre>
