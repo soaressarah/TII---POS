@@ -14,80 +14,74 @@
 
 ## RESUMO
 1. Propósito da linguagem
-    - Chakra é um código aberto em JavaScript que foi desenvolvido pela Microsoft para a versão do Internet Explorer 9 (32-bit)
+    - O Elm é uma linguagem de programação específica de domínio para a criação de interfaces de usuário gráficas baseadas em web browser. Elm é puramente funcional, sendo desenvolvido com ênfase na usabilidade, desempenho e robustez.  Elm compila para JavaScript, HTML e CSS. O principal foco da linguagem é trazer os benefícios (e garantias) da Programação Funcional para o Front-End.
 2. Paradigma da Linguagem
-    - Multi-paradigma
+    - Funcional.
 3. Data de criação
-    - 2009
+    - O Elm foi criado em 2012, por Evan Czaplicki. Em 2013, Czaplicki, juntou-se ao Prezi em 2013 para trabalhar no Elm, e em 2016 mudou-se para NoRedInk como um engenheiro de código aberto e começou a Elm Software Foundation.
 4. Principal mantedor
-    - Microsoft
+    - É seu próprio criador, Evan Czaplicki.
 ## Instalação e Uso
 * Instalação
-    * O ChakraCore é suportado em Windows 7 ou posterior e Windows Server 2008 R2 ou posterior, com ou [Visual Studio 2013](https://www.microsoft.com/pt-br/download/details.aspx?id=48129) ou [2015](https://www.microsoft.com/en-us/download/details.aspx?id=48146) com suporte de C++ instalados. Após a instalação do Visual Studio:
-      1. Clone o ChakraCore através do [link](https://github.com/Microsoft/ChakraCore.git)
-      2. Abra Build\Chakra.Core.sln no visual studio
-      3. Execute a solução
-* Uso
-    * Após clonar e instalar o ChakraCore, usuarios de C#, antes de mais nada, precisam adquirir o ChakraCore.dll (Build\VcBuild\bin\[platform+output]\)
-    * Para usar o JavaScript Runtime:
-      1. Copie ChakraCore.dll para o diretório de saída do projeto.
-      2. Em geral, use PInvoke para chamar APIs JSRT. Você pode copiar um wrapper de nossa amostra . Às vezes, pode haver novas APIs que ainda não adicionamos ao wrapper, mas você pode importar do ChakraCore.dll assim:
-        <pre>
-        [DllImport("ChakraCore.dll")] 
-        internal static extern JavaScriptErrorCode JsCreateRuntime(JavaScriptRuntimeAttributes attributes, JavaScriptThreadServiceCallback threadService, out JavaScriptRuntime runtime);
-        </pre>
-    * Com um projeto novo, inclua o um wrapper C # para JSRT e adicione o CodigoTeste (abaixo) a um arquivo .cs.
-    * Compile usando *f6* ou usando Build > Build Solution.
-    * Execute a amostra pressionando Ctrl+F5ou usando Debug > Start Without Debugging.
-    * <h4>CodigoTeste</h4>
-       <pre>
-        using System;
-        using System.Runtime.InteropServices;
-        // wrapper namespace
-        using ChakraHost.Hosting;
+    - O Elm pode ser instalado no Mac, Windows, Linux (através do npm), a plataforma também disponibiliza um compilador online. Se você for baixar no Mac ou Windows basta fazer o download em: http://elm-lang.org/
+    - Para instalar no Linux basta utilizar este comando: 
+      *$ npm install -g elm*
+    - Após a instalação, você terá as seguintes ferramentas de linha de comando: <br>
+      <b>elm-repl</b> - brincar com expressões Elm <br>
+      <b>elm-reactor</b> - obter um projeto rapidamente <br>
+      <b>elm-make</b> - compilar código Elm diretamente <br>
+      <b>elm-package</b> - fazer o download de pacotes <br><br>
+    
+    <pre>
+    <b>Ex elm-repl</b>
+$ elm-repl
+---- elm-repl 0.18.0 -----------------------------------------------------------
+ :help for help, :exit to exit, more at https://github.com/elm-lang/elm-repl
+--------------------------------------------------------------------------------
+> 1 / 2
+0.5 : Float
+> List.length [1,2,3,4]
+4 : Int
+> String.reverse "stressed"
+"desserts" : String
+> :exit
+$
+</pre>
+<pre>
+   <b>Ex elm-reactor</b>
+Ajuda a construir projetos Elm sem mexer com a linha de comando demais. Basta executá-lo na raiz do seu projeto, como este:<br>
 
-        public class HelloWorld
-        {
-        static void Main() {
-        JavaScriptRuntime runtime;
-        JavaScriptContext context;
-        JavaScriptSourceContext currentSourceContext = JavaScriptSourceContext.FromIntPtr(IntPtr.Zero);
-        JavaScriptValue result;
+git clone https://github.com/evancz/elm-architecture-tutorial.git
+cd elm-architecture-tutorial
+elm-reactor
 
-        // Your script, try replace the basic hello world with something else
-        string script = "(()=>{return \'Hello world!\';})()";
+Isso inicia um servidor em http://localhost:8000. Você pode navegar para qualquer arquivo Elm e ver o que parece.
+</pre>
+<pre>
+   <b>Ex elm-make</b>
+Constrói projetos Elm. Ele pode compilar código para HTML ou JavaScript. É a maneira mais geral de compilar a linguagem, portanto, se seu projeto se tornar muito avançado para elm-reactor, você deve começar a usar elm-make diretamente.
+Digamos que você queira compilar Main.elm para um arquivo HTML nomeado main.html. Você executaria este comando:
 
-        // Create a runtime. 
-        Native.JsCreateRuntime(JavaScriptRuntimeAttributes.None, null, out runtime);
-        
-        // Create an execution context. 
-        Native.JsCreateContext(runtime, out context);
-        
-        // Now set the execution context as being the current one on this thread.
-        Native.JsSetCurrentContext(context);
-        
-        // Run the script.
-        Native.JsRunScript(script, currentSourceContext++, "", out result);
+elm-make Main.elm --output=main.html
+</pre>
+<pre>
+   <b>Ex elm-package</b>
+Com esse comando você pode baixar e publicar pacotes do no catálogo de pacotes. 
+Digamos que você deseja usar elm-lang/http e NoRedInk/elm-decode-pipeline para fazer solicitações HTTP em um servidor e transformar o JSON resultante em valores Elm. Você diria:
+elm-package install elm-lang/http
+elm-package install NoRedInk/elm-decode-pipeline
 
-        // Convert your script result to String in JavaScript; redundant if your script returns a String
-        JavaScriptValue resultJSString;
-        Native.JsConvertValueToString(result, out resultJSString);
-        
-        // Project script result in JS back to C#.
-        IntPtr resultPtr;
-        UIntPtr stringLength;
-        Native.JsStringToPointer(resultJSString, out resultPtr, out stringLength);
+Alguns editores de texto são recomendados pelo Elm, tais como: 
+Atom
+Brackets
+Emacs
+IntelliJ
+Light Table
+Sublime Text
+Vim
+VS Code
+</pre>
 
-        string resultString = Marshal.PtrToStringUni(resultPtr);
-        Console.WriteLine(resultString);
-        Console.ReadLine();
-
-        // Dispose runtime
-        Native.JsSetCurrentContext(JavaScriptContext.Invalid);
-        Native.JsDisposeRuntime(runtime);
-        }
-        }
-        </pre>
 ## SINTAXE BÁSICA
 1. Variaveis e constantes
 variavel = valor
