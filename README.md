@@ -10,7 +10,7 @@
     - Matrícula: 20141011110034
     - Github Nickname: santosvanessa
 ## Linguagem
-  - Chakra
+  - Elm
 
 ## Resumo
 1. Propósito da linguagem
