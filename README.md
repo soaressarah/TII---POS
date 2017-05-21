@@ -16,14 +16,14 @@
 ## RESUMO
 ### Propósito da linguagem
 - O Elm é uma linguagem funcional, fortemente tipada e que compila para JavaScript, HTML e CSS. O principal foco da linguagem é trazer os benefícios (e garantias) da Programação Funcional para o Front-End.
-- Por ser uma linguagem compilado, tem chances nulas de erros em tempo de execução.
-- Os efeitos colaterais são bem controlados, diferentemente do JavaScript. No JavaScript o erro pod estar em qualquer lugar do código.
+- Por ser uma linguagem compilada, tem chances nulas de erros em tempo de execução.
+- Os efeitos colaterais são bem controlados, diferentemente do JavaScript. No JavaScript o erro pode estar em qualquer lugar do código.
     
 ### Paradigma da Linguagem
 - O paradigma da linguagem é funcional, ou seja, baseia-se no conceito matemático de função. Onde para cada entrada (domínio) há somente uma saída (contra-domínio).
 
 ### Data de criação
-- O Elm foi criado em 2012, por Evan Czaplicki. Em 2013, Czaplicki, juntou-se ao Prezi para trabalhar no Elm, e em 2016 mudou-se para NoRedInk como um engenheiro de código aberto e começou a Elm Software Foundation.
+- O Elm foi criado em 2012, por Evan Czaplicki. Em 2013, Czaplicki, juntou-se ao Prezi para trabalhar no Elm, e em 2016 mudou-se para o NoRedInk como um engenheiro de código aberto e começou a Elm Software Foundation.
 ### Principal mantedor
 - Seu próprio criador, Evan Czaplicki.
 ## INSTALAÇÃO E USO
@@ -33,7 +33,7 @@
 - Para instalar no Linux basta utilizar este comando: `$ npm install -g elm`
 ### Uso
 Após a instalação, você terá algumas ferramentas de linha de comando: 
-**elm-repl**: "Brinca" com expressões Elm 
+**elm-repl**: "Brinca" com expressões
 ```
 $ elm-repl
 ----elm-repl 0.18.0-----------------------------------------------------------
