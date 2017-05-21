@@ -34,10 +34,10 @@
     
     <pre>
     <b>Ex elm-repl</b>
-$ elm-repl
----- elm-repl 0.18.0 -----------------------------------------------------------
- :help for help, :exit to exit, more at https://github.com/elm-lang/elm-repl
---------------------------------------------------------------------------------
+$ elm-repl<br>
+----elm-repl 0.18.0----------------------------------------------------------- <br>
+ :help for help, :exit to exit, more at https://github.com/elm-lang/elm-repl <br>
+-------------------------------------------------------------------------------- <br>
 > 1 / 2 <br>
 0.5 : Float <br>
 > List.length [1,2,3,4] <br>
