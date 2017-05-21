@@ -199,8 +199,8 @@ volume {width, height, depth} =
 volume { width = 3, height = 2, depth = 7 } 
 </pre>
 Funções podem ser recursivas.
-*fib n =
-  if n < 2 then
-    1
-  else
-    fib (n - 1) + fib (n - 2)*
+*fib n = <br>
+  if n < 2 then <br>
+    1 <br>
+  else <br>
+    fib (n - 1) + fib (n - 2)* <br>
