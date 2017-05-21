@@ -15,7 +15,7 @@
  
 ## RESUMO
 ### Propósito da linguagem
-- O Elm é uma linguagem de programação específica de domínio para a criação de interfaces de usuário gráficas baseadas em web browser. Elm é puramente funcional, sendo desenvolvido com ênfase na usabilidade, desempenho e robustez. Elm compila para JavaScript, HTML e CSS. O principal foco da linguagem é trazer os benefícios (e garantias) da Programação Funcional para o Front-End.
+- O Elm é uma linguagem funcional, fortemente tipada e que compila para JavaScript, HTML e CSS. O principal foco da linguagem é trazer os benefícios (e garantias) da Programação Funcional para o Front-End.
     
 ### Paradigma da Linguagem
 - O paradigma da linguagem é funcional, ou seja, baseia-se no conceito matemático de função. Onde para cada entrada (domínio) há somente uma saída (contra-domínio).
@@ -23,10 +23,10 @@
 ### Data de criação
 - O Elm foi criado em 2012, por Evan Czaplicki. Em 2013, Czaplicki, juntou-se ao Prezi para trabalhar no Elm, e em 2016 mudou-se para NoRedInk como um engenheiro de código aberto e começou a Elm Software Foundation.
 ### Principal mantedor
-- c
+- É seu próprio criador, Evan Czaplicki.
 ## INSTALAÇÃO E USO
 ### Instalação
-- O Elm pode ser instalado no Mac, Windows, Linux (através do npm), a plataforma também disponibiliza um [compilador online](http://elm-lang.org/try). 
+- O Elm pode ser instalado no Mac, Windows e Linux (através do npm), a plataforma também disponibiliza um [compilador online](http://elm-lang.org/try). 
 - Se você for baixar no Mac ou Windows basta fazer o download no [site deles](http://elm-lang.org/)
 - Para instalar no Linux basta utilizar este comando: `$ npm install -g elm`
 ### Uso
@@ -46,7 +46,7 @@ $ elm-repl
 > :exit
 $
 ```
-**elm-reactor**: Ajuda a construir projetos Elm sem mexer com a linha de comando demais. Basta executá-lo na raiz do seu projeto como no exemplo a seguir: 
+**elm-reactor**: Ajuda a construir projetos Elm sem mexer com outras linhas de comando. Basta executá-lo na raiz do seu projeto como no exemplo a seguir: 
 ```
 git clone https://github.com/evancz/elm-architecture-tutorial.git
 cd elm-architecture-tutorial
@@ -54,7 +54,7 @@ elm-reactor
 
 Isso inicia um servidor em http://localhost:8000. Você pode navegar para qualquer arquivo Elm e ver o que parece.
 ```
-**elm-make**: Constrói projetos Elm. Ele pode compilar código para HTML ou JavaScript. É a maneira mais geral de compilar a linguagem, portanto, se seu projeto se tornar muito avançado para elm-reactor, você deve começar a usar elm-make diretamente.
+**elm-make**: Constrói projetos Elm. Ele pode compilar código para HTML ou JavaScript. É a maneira mais fácil de compilar a linguagem, portanto, se seu projeto se tornar muito avançado para elm-reactor, você deve começar a usar elm-make diretamente.
 ```
 Digamos que você queira compilar Main.elm para um arquivo HTML nomeado main.html. Você executaria este comando:
 
