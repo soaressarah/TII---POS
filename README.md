@@ -38,14 +38,14 @@ $ elm-repl
 ---- elm-repl 0.18.0 -----------------------------------------------------------
  :help for help, :exit to exit, more at https://github.com/elm-lang/elm-repl
 --------------------------------------------------------------------------------
-> 1 / 2
-0.5 : Float
-> List.length [1,2,3,4]
-4 : Int
-> String.reverse "stressed"
-"desserts" : String
-> :exit
-$
+> 1 / 2 <br>
+0.5 : Float <br>
+> List.length [1,2,3,4] <br>
+4 : Int <br>
+> String.reverse "stressed" <br>
+"desserts" : String <br>
+> :exit <br>
+$ <br>
 </pre>
 <pre>
    <b>Ex elm-reactor</b>
