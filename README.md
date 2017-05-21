@@ -179,6 +179,11 @@ sum [1,4, 6, 8] -- 19
       *"Esta é uma string porque ela utiliza aspas duplas."*<br>
       Strings podem ser anexadas.<br>
       *"Olá " ++ "mundo!" -- "Olá mundo!"*<br>
+   - Matriz
+      Não é possível criar uma matriz com uma sintaxe literal como lista. A maneira mais comum de criar uma matriz é criar primeiro uma lista e transformá-la em uma matriz.
+<pre>
+myArray = Array.fromList [ 1, 2, 3, 4 ]
+</pre>
 7. Funções
 <pre>
 multiply a b =
