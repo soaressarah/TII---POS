@@ -32,7 +32,7 @@
       <b>elm-make</b> - compilar código Elm diretamente <br>
       <b>elm-package</b> - fazer o download de pacotes <br><br>
     
-    <pre>
+<pre>
     <b>Ex elm-repl</b>
 $ elm-repl<br>
 ----elm-repl 0.18.0----------------------------------------------------------- <br>
