@@ -46,7 +46,7 @@ $ elm-repl
 > :exit
 $
 ```
-**elm-reactor**: Ajuda a construir projetos Elm sem mexer com outras linhas de comando. Basta executá-lo na raiz do seu projeto como no exemplo a seguir: 
+**elm-reactor**: Ajuda a construir projetos, sem mexer com outras linhas de comando. Basta executá-lo na raiz do seu projeto como no exemplo a seguir: 
 ```
 git clone https://github.com/evancz/elm-architecture-tutorial.git
 cd elm-architecture-tutorial
