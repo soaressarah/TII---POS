@@ -1,13 +1,13 @@
 # TII---POS
 # TII---POS
 ## COMPONENTES
-##### Laís Pereira do Nascimento
+### Laís Pereira do Nascimento
     Matrícula: 20141011110107  
     Github Nickname: laypereirar
-##### Sarah Rebecca Soares Penha
+### Sarah Rebecca Soares Penha
     Matrícula: 20141011110182 
     Github Nickname: soaressarah  
-##### Vanessa Cristiane Santos
+### Vanessa Cristiane Santos
     Matrícula: 20141011110034
     Github Nickname: santosvanessa
 
@@ -15,22 +15,22 @@
   - Elm
  
 ## RESUMO
-##### Propósito da linguagem
+### Propósito da linguagem
 - O Elm é uma linguagem de programação específica de domínio para a criação de interfaces de usuário gráficas baseadas em web browser. Elm é puramente funcional, sendo desenvolvido com ênfase na usabilidade, desempenho e robustez. Elm compila para JavaScript, HTML e CSS. O principal foco da linguagem é trazer os benefícios (e garantias) da Programação Funcional para o Front-End.
     
-##### Paradigma da Linguagem
+### Paradigma da Linguagem
 - O paradigma da linguagem é funcional, ou seja, baseia-se no conceito matemático de função. Onde para cada entrada (domínio) há somente uma saída (contra-domínio).
 
-##### Data de criação
+### Data de criação
 - O Elm foi criado em 2012, por Evan Czaplicki. Em 2013, Czaplicki, juntou-se ao Prezi para trabalhar no Elm, e em 2016 mudou-se para NoRedInk como um engenheiro de código aberto e começou a Elm Software Foundation.
-##### Principal mantedor
-    - c
+### Principal mantedor
+- c
 ## INSTALAÇÃO E USO
-##### Instalação
+### Instalação
 - O Elm pode ser instalado no Mac, Windows, Linux (através do npm), a plataforma também disponibiliza um [compilador online](http://elm-lang.org/try). 
 - Se você for baixar no Mac ou Windows basta fazer o download no [site deles](http://elm-lang.org/)
 - Para instalar no Linux basta utilizar este comando: `$ npm install -g elm`
-#### Uso
+### Uso
 Após a instalação, você terá algumas ferramentas de linha de comando: 
 **elm-repl**: "Brinca" com expressões Elm 
 ```
@@ -69,9 +69,9 @@ elm-package install NoRedInk/elm-decode-pipeline
 
 
 ## SINTAXE BÁSICA
-##### Varáveis e constantes
+### Varáveis e constantes
 Mesma estrutura para todos os tipos: ``` variavel = valor ```
-##### Operadores relacionais e lógicos
+### Operadores relacionais e lógicos
 **not**: Nega um valor boleano
 ``` 
 Bool -> Bool 
@@ -98,7 +98,7 @@ True se uma ou ambas as entradas forem True.
 Bool -> Bool -> Bool
 True se exatamente uma entrada for True.
 ```
-##### Operadores aritméticos
+### Operadores aritméticos
 **(+)**: Soma
 ```number -> number -> number```
 **(-)**: Subtração 
@@ -181,7 +181,7 @@ else if n > 0 then
 else
   "n é negativo"
 ```
-##### Estruturas de repetição
+### Estruturas de repetição
 
 ```
 sum : List number -> number
@@ -192,7 +192,7 @@ sum lst =
 ----------------------------
 sum [1,4, 6, 8] -- 19
 ```
-##### Vetores, matrizes e strings
+### Vetores, matrizes e strings
 **Strings**
 ``` "Esta é uma string porque ela utiliza aspas duplas." ```
 Strings podem ser anexadas: ```"Olá " ++ "mundo!" -- "Olá mundo!"```
