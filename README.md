@@ -1,5 +1,5 @@
 # TII---POS
-## COMPONENTES
+## Componentes
   - Laís Pereira do Nascimento
     - Matrícula: 20141011110107  
     - Github Nickname: laypereirar
@@ -9,10 +9,10 @@
   - Vanessa Cristiane Santos
     - Matrícula: 20141011110034
     - Github Nickname: santosvanessa
-## LINGUAGEM
+## Linguagem
   - Chakra
 
-## RESUMO
+## Resumo
 1. Propósito da linguagem
     - O Elm é uma linguagem de programação específica de domínio para a criação de interfaces de usuário gráficas baseadas em web browser. Elm é puramente funcional, sendo desenvolvido com ênfase na usabilidade, desempenho e robustez.  Elm compila para JavaScript, HTML e CSS. O principal foco da linguagem é trazer os benefícios (e garantias) da Programação Funcional para o Front-End.
 2. Paradigma da Linguagem
@@ -82,7 +82,7 @@ Vim
 VS Code
 </pre>
 
-## SINTAXE BÁSICA
+## Sintaxe Básica
 1. Variaveis e constantes
 variavel = valor
 *Mesma estrutura para todos os tipos*
