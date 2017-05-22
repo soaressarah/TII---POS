@@ -206,7 +206,7 @@ Não é possível criar um vetor com uma sintaxe literal como lista. A maneira m
       [ ["Row 1-Col 1", "Row 1-Col 2"]
       , ["Row 2-Col 1", "Row 2-Col 2"]
       ] ```
-##### Funções
+### Funções
 ```
 multiply a b =
   a * b
