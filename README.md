@@ -197,9 +197,15 @@ sum [1,4, 6, 8] -- 19
 **Strings**
 ``` "Esta é uma string porque ela utiliza aspas duplas." ```
 Strings podem ser anexadas: ```"Olá " ++ "mundo!" -- "Olá mundo!"```
-**Matriz** 
-Não é possível criar uma matriz com uma sintaxe literal como lista. A maneira mais comum de criar uma matriz é criar primeiro uma lista e transformá-la em uma matriz.
+**Vetor** 
+Não é possível criar um vetor com uma sintaxe literal como lista. A maneira mais comum de criar um vetor é criar primeiro uma lista e transforma-la em um vetor
 ``` myArray = Array.fromList [ 1, 2, 3, 4 ] ```
+**Matriz**
+``` array2d =
+    Array2D.fromList
+      [ ["Row 1-Col 1", "Row 1-Col 2"]
+      , ["Row 2-Col 1", "Row 2-Col 2"]
+      ] ```
 ##### Funções
 ```
 multiply a b =
